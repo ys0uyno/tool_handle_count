@@ -186,6 +186,7 @@ HCURSOR Ctool_handle_countDlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+// Must be placed in a process to have effect
 int check_handle_count(HANDLE handle, int &count)
 {
 	NTQUERYOBJECT pfnNtQueryObject =
