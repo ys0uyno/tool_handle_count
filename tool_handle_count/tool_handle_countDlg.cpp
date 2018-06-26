@@ -205,7 +205,7 @@ int check_handle_count(HANDLE handle, int &count)
 		return INVALID_HANDLE;
 	}
 
-	count = shs.HandleCount - 1; // Subtract 1 for handle count
+	count = shs.HandleCount;
 	return CHECK_SUCCEED;
 }
 
